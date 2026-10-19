@@ -1,0 +1,465 @@
+{
+  "stimulus": "synthetic cubesat bus, not a downlink",
+  "power_meter": "not called",
+  "batch": 8,
+  "num_weights": 20,
+  "devices_nodes": [
+    "/dev/akida0",
+    "/dev/akida1",
+    "/dev/akida10",
+    "/dev/akida11",
+    "/dev/akida2",
+    "/dev/akida3",
+    "/dev/akida4",
+    "/dev/akida5",
+    "/dev/akida6",
+    "/dev/akida7",
+    "/dev/akida8",
+    "/dev/akida9"
+  ],
+  "chips": [
+    {
+      "chip": 0,
+      "name": "eclipse_entry",
+      "device": "PCIe/NSoC_v2/0",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          50,
+          42
+        ],
+        "rival": [
+          51,
+          36
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 1,
+      "name": "eclipse_exit",
+      "device": "PCIe/NSoC_v2/1",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          34,
+          41
+        ],
+        "rival": [
+          53,
+          42
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": true,
+      "error": null
+    },
+    {
+      "chip": 2,
+      "name": "wheel_desat",
+      "device": "PCIe/NSoC_v2/2",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          25,
+          31
+        ],
+        "rival": [
+          18,
+          22
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 3,
+      "name": "commanded_heater",
+      "device": "PCIe/NSoC_v2/3",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          48,
+          58
+        ],
+        "rival": [
+          23,
+          24
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 4,
+      "name": "radio_pass",
+      "device": "PCIe/NSoC_v2/4",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          37,
+          55
+        ],
+        "rival": [
+          34,
+          21
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": true,
+      "error": null
+    },
+    {
+      "chip": 5,
+      "name": "payload_on",
+      "device": "PCIe/NSoC_v2/5",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          20,
+          26
+        ],
+        "rival": [
+          53,
+          49
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": true,
+      "error": null
+    },
+    {
+      "chip": 6,
+      "name": "safe_hold",
+      "device": "PCIe/NSoC_v2/6",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          34,
+          41
+        ],
+        "rival": [
+          40,
+          22
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": true,
+      "error": null
+    },
+    {
+      "chip": 7,
+      "name": "gyro_tumble",
+      "device": "PCIe/NSoC_v2/7",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          21,
+          19
+        ],
+        "rival": [
+          37,
+          24
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 8,
+      "name": "array_overcurrent",
+      "device": "PCIe/NSoC_v2/8",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          30,
+          38
+        ],
+        "rival": [
+          42,
+          47
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 9,
+      "name": "coolant_swing",
+      "device": "PCIe/NSoC_v2/9",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          22,
+          35
+        ],
+        "rival": [
+          10,
+          12
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    },
+    {
+      "chip": 10,
+      "name": "vibration_burst",
+      "device": "PCIe/NSoC_v2/10",
+      "map": "hw_only",
+      "scores": {
+        "own": [
+          8,
+          15
+        ],
+        "rival": [
+          32,
+          25
+        ],
+        "quiet": [
+          0,
+          0
+        ]
+      },
+      "separated": true,
+      "error": null
+    },
+    {
+      "chip": 11,
+      "name": "uncommanded_heater",
+      "device": "PCIe/NSoC_v2/11",
+      "map": "hw_only",
+      "scores": {
+        "novel_before": [
+          29,
+          27,
+          24
+        ],
+        "commanded_before": [
+          55,
+          52,
+          51
+        ],
+        "quiet_before": [
+          0,
+          0,
+          0
+        ],
+        "novel_after": [
+          29,
+          27,
+          36
+        ],
+        "commanded_after": [
+          55,
+          52,
+          61
+        ],
+        "quiet_after": [
+          0,
+          0,
+          0
+        ]
+      },
+      "separated": false,
+      "error": null
+    }
+  ],
+  "reserve": {
+    "learned_windows": 8,
+    "novel_after_argmax_is_new_class": true,
+    "commanded_stays_original_class": false,
+    "quiet_does_not_become_the_new_class": true,
+    "novel_after": [
+      29,
+      27,
+      36
+    ],
+    "commanded_after": [
+      55,
+      52,
+      61
+    ],
+    "quiet_after": [
+      0,
+      0,
+      0
+    ]
+  },
+  "control": {
+    "packet": "eclipse_entry",
+    "unchanged": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "all_unchanged": true,
+    "before": [
+      [
+        50,
+        42
+      ],
+      [
+        53,
+        42
+      ],
+      [
+        28,
+        43
+      ],
+      [
+        39,
+        35
+      ],
+      [
+        37,
+        31
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        38,
+        41
+      ],
+      [
+        41,
+        32
+      ],
+      [
+        52,
+        46
+      ],
+      [
+        44,
+        38
+      ],
+      [
+        39,
+        41
+      ]
+    ],
+    "after": [
+      [
+        50,
+        42
+      ],
+      [
+        53,
+        42
+      ],
+      [
+        28,
+        43
+      ],
+      [
+        39,
+        35
+      ],
+      [
+        37,
+        31
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        38,
+        41
+      ],
+      [
+        41,
+        32
+      ],
+      [
+        52,
+        46
+      ],
+      [
+        44,
+        38
+      ],
+      [
+        39,
+        41
+      ]
+    ]
+  },
+  "errors": [],
+  "enumerate_s": 20.732,
+  "device_desc": [
+    "PCIe/NSoC_v2/0",
+    "PCIe/NSoC_v2/1",
+    "PCIe/NSoC_v2/2",
+    "PCIe/NSoC_v2/3",
+    "PCIe/NSoC_v2/4",
+    "PCIe/NSoC_v2/5",
+    "PCIe/NSoC_v2/6",
+    "PCIe/NSoC_v2/7",
+    "PCIe/NSoC_v2/8",
+    "PCIe/NSoC_v2/9",
+    "PCIe/NSoC_v2/10",
+    "PCIe/NSoC_v2/11"
+  ],
+  "spike_counts": {
+    "eclipse_entry": 31,
+    "eclipse_exit": 20,
+    "wheel_desat": 15,
+    "commanded_heater": 36,
+    "radio_pass": 31,
+    "payload_on": 15,
+    "safe_hold": 20,
+    "gyro_tumble": 10,
+    "array_overcurrent": 15,
+    "coolant_swing": 15,
+    "vibration_burst": 5,
+    "uncommanded_heater": 15,
+    "quiet": 0
+  }
+}
